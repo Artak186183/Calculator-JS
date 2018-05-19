@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Calculator</title>
+	<meta charset="UTF-8">
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="function.js"></script>
+</head>
+
+<body>
+	<div class="wrapper">
+		<form name="calculator" id="formWrapp">
+			<div id="screen">
+				<input type="texbox" name="screen" placeholder="0" id="ekr" /> </div>
+			<div id="Buttons">
+				<input id="reset" type="button" value="C" onClick="resetF()" />
+				<button id="LBracket" type="button" value="(" onClick="LBracketF()">(</button>
+				<button id="RBracket" type="button" value=")" onClick="RBracketF()">)</button>
+				<input id="tithe" type="button" value="1/x" onClick="titheF()" />
+				<button id="square" type="button" onClick="squareF()">X^2</button>
+				<button id="cubic" type="button" onClick="cubicF()">X^3</button>
+				<input id="back" type="button" value="&larr;" onClick="backF()" />
+				<button id="percent" type="button" value="%" onClick="percentF()">%</button>
+				<input id="SquareRoot" type="button" value="&radic;" onClick="squareRoot()" />
+				<button id="pi" type="button" value="3.1415926535" onClick="piF()">&pi;</button>
+				<button id="residual" type="button" value="%" onClick="res()">Res</button>
+				<input id="division" type="button" value="/" onClick="divisionF()" />
+				<input id="nineN" type="button" value="9" onClick="cal(nineN.value)" />
+				<input id="eightN" type="button" value="8" onClick="cal(eightN.value)" />
+				<input id="sevenN" type="button" value="7" onClick="cal(sevenN.value)" />
+				<input id="sixN" type="button" value="6" onClick="cal(sixN.value)" />
+				<input id="fiveN" type="button" value="5" onClick="cal(fiveN.value)" />
+				<input id="multiplication" type="button" value="*" onClick="multiplicationF()" />
+				<input id="fourN" type="button" value="4" onClick="cal(fourN.value)" />
+				<input id="threeN" type="button" value="3" onClick="cal(threeN.value)" />
+				<input id="twoN" type="button" value="2" onClick="cal(twoN.value)" />
+				<input id="oneN" type="button" value="1" onClick="cal(oneN.value)" />
+				<input id="zeroN" type="button" value="0" onClick="zeroNumber()" />
+				<input id="subtractionButton" type="button" value="-" onClick="subtractionF()" />
+				<input id="factor" type="button" value="!" onClick="fact()" />
+				<input id="pointButton" type="button" value="." onClick="pointF()" />
+				<input id="equal" type="button" value="=" onClick="equalF()" />
+				<input id="addButton" type="button" value="+" onClick="addF()" /> </div>
+		</form>
+	</div>
+</body>
+
+</html>
